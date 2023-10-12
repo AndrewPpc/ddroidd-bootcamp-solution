@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    height: 115px;
+    width: 100%;
+    background-color: #003C55;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 20px;
+}
+
+.header-title {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.ddroidd-logo {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: -186px;
+    width: 200px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.main-content {
+    background-color: #F4F5F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    width: 80%;
+    height: 100%;
+}
+
+footer{
+    height: 115px;
+    width: 100%;
+    background-color: #707070;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+ footer p{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ } 
+
+ .join-us-button{
+    width: 240px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FCD400;
+ }
+
+ .join-us-button p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+ .image{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+.img-1{
+    width: 900px;
+    height: 115px;
+}
+
+.img-2{
+    width: 430px;
+    height: 330px;
+}
+
+ .button{
+    position: absolute;
+    display: flex;
+    padding-top: 510px;
+ }
