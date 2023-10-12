@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("myForm");
+    const form = document.getElementById("formData");
     const errorMessages = document.getElementById("errorMessages");
 
     form.addEventListener("submit", function (e) {
@@ -51,13 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (errors.length > 0) {
-            // Display errors in a list
+            
             errorMessages.innerHTML = `
             <h3>Please fix the following errors to proceed:</h3>
             <ul>${errors.map(error => `<li>${error}</li>`).join('')}</ul>`;
 
         } else {
-            // Store form data in localStorage
             const formData = {
                 firstName,
                 lastName,
@@ -70,13 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 city,
             };
 
-            // Convert the formData object to JSON
             const formDataJSON = JSON.stringify(formData);
 
-             // Store the JSON in localStorage
             localStorage.setItem("formData", formDataJSON);
 
-            // Redirect to the next page
             window.location.href = "./nextpage.html";
         }
     });

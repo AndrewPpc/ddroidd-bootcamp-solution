@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const formDataDisplay = document.getElementById("formDataDisplay");
 
-    // Retrieve form data from localStorage
     const formDataString = localStorage.getItem("formData");
     if (formDataString) {
         const formData = JSON.parse(formDataString);
 
-        // Create an HTML string to display the data
         const html = `
             <h3>Submission Summary: </h3>
             <p><strong>First Name:</strong> ${formData.firstName}</p>
@@ -20,10 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <p><strong>City:</strong> ${formData.city}</p>
         `;
 
-        // Insert the HTML into the page
         formDataDisplay.innerHTML = html;
     } else {
-        // Provide a message when no form data is found
         formDataDisplay.innerHTML = "<p>No form data found.</p>";
     }
 });
