@@ -1,5 +1,7 @@
+@import './base.css';
 *{
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 header {
@@ -15,7 +17,7 @@ header {
 
 .header-title {
     color: #FFF;
-    font-family: Open Sans;
+    font-family: sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
@@ -47,11 +49,6 @@ main {
     background-color: azure;
 }
 
-form {
-    width: 60%;
-    height: fit-content;    
-}
-
 .contact-form-container {
     display: flex;
     flex-direction: row;
@@ -67,9 +64,11 @@ form {
 
 .application-title{
     color: #003C55;
-    font-family: Open Sans;
+    font-family: sans-serif;
     font-size: 28px;
     font-weight: 700;
+    position: absolute;
+    margin-top: -450px;
 }
 
 .sub-title{
@@ -80,6 +79,7 @@ form {
     font-weight: 700;
     line-height: normal;
     margin: 10px 0px;
+    font-family: sans-serif;
 }
 
 .input-box{
@@ -92,7 +92,9 @@ form {
     color: #003C55;
     font-weight: 600;
 }
-
+.address-input{
+    margin: 15px 0px;
+}
 .address-input label {
     color: #003C55;
     font-weight: 600;
@@ -129,10 +131,6 @@ form {
     height: fit-content;
 }
 
-.country label{
-    display: flex; 
-}
-
 footer{
     height: 115px;
     width: 100%;
@@ -142,10 +140,11 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-top: 25px;
 }
  footer p{
     color: #FFF;
-    font-family: Open Sans;
+    font-family: sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -156,4 +155,49 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 10px;
  }
+
+.option {
+    width: 215px;
+    height: 20px;
+    margin: 0px 6px;
+    border: 1px solid #003C55;
+    background: #FFF;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+button{
+    width: 230px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FCD400;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+ }
+
+ button p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+ .join-us{
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+ }
+
+ a{
+    text-decoration: none;
+    color: #000;
+ }
+
+ 
